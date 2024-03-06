@@ -35,7 +35,16 @@
             margin-right: auto;
             margin-bottom: 10px;
             color: #0c30b0;
-            background-color: #fff;
+            text-shadow: 1px 1px 1px blue;
+            /* Aplicação de sobra ao texto, para dar um efeito de negrito */
+            content: "";
+            /* Adiciona um conteúdo vazio para evitar problemas de layout */
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Branco com 70% de opacidade */
+            opacity: 1;
+            /* Controle adicional sobre a opacidade (opcional) */
+            z-index: -1;
+            /* Posiciona o pseudo-elemento atrás do conteúdo */
             padding: 10px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
@@ -64,15 +73,23 @@
             Músicas
         </li>
         <li onclick="window.location.href='https://photos.app.goo.gl/kRHNgJ4pp9HyFLHx5'">
-            <img alt="music.svg" src="foto.svg" width="20" height="20" style="vertical-align:middle;margin:0px 0px" />
+            <img alt="foto.svg" src="foto.svg" width="20" height="20" style="vertical-align:middle;margin:0px 0px" />
             Fotos
         </li>
         <li onclick="window.location.href='https://photos.app.goo.gl/4iphb1fntdXCftMB8'">
-            <img alt="music.svg" src="video.svg" width="20" height="20" style="vertical-align:middle;margin:0px 0px" />
+            <img alt="video.svg" src="video.svg" width="20" height="20" style="vertical-align:middle;margin:0px 0px" />
             Vídeos
         </li>
     </ul>
     </div>
+
 </body>
+<!-- <footer>
+    <li>
+        <img alt="copyleft.svg" src="copyleft.svg" width="20" height="20"
+            style="vertical-align:middle;margin:0px 0px" />
+        Grupo Melodia - 2024
+    </li>
+</footer> -->
 
 </html>
